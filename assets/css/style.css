@@ -541,36 +541,6 @@
 				display: none;
 			}
 
-/* Dropotron */
-
-	.dropotron {
-		margin-top: -2px;
-		background: #3ac984;
-		border-radius: 10px;
-		color: white;
-		min-width: 12em;
-		padding: 1em 0;
-	}
-
-		.dropotron > li {
-			line-height: 2em;
-			padding: 0 1em;
-		}
-
-			.dropotron > li > a {
-				color: #FFF;
-				text-decoration: none;
-			}
-
-			.dropotron > li.active > a, .dropotron > li:hover > a {
-				color: #FFF;
-			}
-
-		.dropotron.level-0 {
-			border-radius: 0 10px 10px 10px;
-			font-size: 1em;
-		}
-
 /* Banner */
 
 	#banner {
