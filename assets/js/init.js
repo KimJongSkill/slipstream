@@ -46,4 +46,4 @@
 
 	smoothScroll.init();
 
-	})(jQuery);
+})(jQuery);
