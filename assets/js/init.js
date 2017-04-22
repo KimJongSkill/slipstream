@@ -12,7 +12,7 @@
 		breakpoints: {
 			global:		{ range: '*', containers: 1400, grid: { gutters: 50 } },
 			wide:			{ range: '-1680', containers: 1200, grid: { gutters: 40 } },
-			normal:		{ range: '-1280', containers: 960, lockViewport: true },
+			normal:		{ range: '-1280', containers: 960 },
 			narrow:		{ range: '-980', containers: '95%', grid: { gutters: 30 } },
 			narrower:	{ range: '-840', grid: { collapse: 1 } },
 			mobile:		{ range: '-640', containers: '90%', grid: { gutters: 15, collapse: 2 } }
