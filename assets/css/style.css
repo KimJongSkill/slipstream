@@ -655,3 +655,16 @@
 		#footer a {
 			color: inherit;
 		}
+
+/* Custom */
+
+	.logo {
+		max-width: 100%;
+		max-height: 256px;
+		display: block;
+		margin: 0 auto;
+	}
+
+	.centered {
+		text-align: center;
+	}
