@@ -667,3 +667,11 @@
 	.overflow-x {
 		overflow-x: auto;
 	}
+
+	#nav a {
+		transition: text-shadow 0.2s ease-in-out;
+	}
+
+	#nav a:hover {
+		text-shadow: 0 0 0.2em black;
+	}
