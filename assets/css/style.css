@@ -638,3 +638,12 @@
 	.centered {
 		text-align: center;
 	}
+
+	.justified {
+		text-align: justify;
+	}
+
+	.padded-img {
+		width: 100%;
+		padding: 5% 0;
+	}
