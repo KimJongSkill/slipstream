@@ -638,8 +638,7 @@
 		text-align: justify;
 	}
 
-	.padded-img {
-		width: 100%;
+	.padded {
 		padding: 5% 0;
 	}
 
@@ -674,4 +673,24 @@
 
 	#nav a:hover {
 		text-shadow: 0 0 0.2em black;
+	}
+
+	.animated {
+		position: relative;
+	}
+
+	.animated:hover > .overlay {
+		height: 5%;
+	}
+
+	.animated > .overlay {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		background-color: #c00000;
+		overflow: hidden;
+		width: 100%;
+		height: 0;
+		transition: .5s ease;
 	}
