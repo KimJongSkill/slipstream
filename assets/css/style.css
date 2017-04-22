@@ -644,3 +644,19 @@
 		width: 100%;
 		padding: 5% 0;
 	}
+
+	.bronze-tier {
+		background-color: #e67e22;
+	}
+
+	.silver-tier {
+		background-color: #bdc3c7;
+	}
+
+	.gold-tier {
+		background-color: #f1c40f;
+	}
+
+	.platinum-tier {
+		background-color: #ecf0f1;
+	}
