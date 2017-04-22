@@ -447,9 +447,12 @@
 	}
 
 	.wrapper.style2 {
+		text-align: center;
+	}
+
+	.wrapper.style2, .wrapper.style4 {
 		background: #ececec;
 		padding: 6em 0;
-		text-align: center;
 	}
 
 	.wrapper.style3 {
