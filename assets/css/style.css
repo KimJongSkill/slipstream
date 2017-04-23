@@ -675,15 +675,15 @@
 		text-shadow: 0 0 0.2em black;
 	}
 
-	.animated {
+	div.animated {
 		position: relative;
 	}
 
-	.animated:hover > .overlay {
+	div.animated:hover > div.overlay {
 		height: 5%;
 	}
 
-	.animated > .overlay {
+	div.animated > div.overlay {
 		position: absolute;
 		bottom: 0;
 		left: 0;
