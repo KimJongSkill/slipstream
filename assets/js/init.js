@@ -47,3 +47,20 @@
 	smoothScroll.init();
 
 })(jQuery);
+
+$(document).ready( function() {
+	var Colours = [ "#e67e22", "#bdc3c7", "#f1c40f", "#ecf0f1" ];
+	var Elements = $("table.animated th, table.animated td");
+
+	Elements.each( function() {
+		var n = $(this).index() + 1;
+
+		$(this).hover( function() {
+			$("table.animated tr > td:nth-child(" + n + "):has(i)")
+				.css("background-color", Colours[n - 3]);
+		}, function() {
+			$("table.animated tr > td:nth-child(" + n + "):has(i)")
+				.css("background-color", "");
+		});
+	});
+});
