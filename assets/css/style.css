@@ -679,6 +679,10 @@
 		transition: .5s ease;
 	}
 
-	table.animated td {
-		transition: 0.4s ease;
+	table.animated td, i.animated {
+		transition: 0.4s ease-in-out;
+	}
+
+	i.animated:hover {
+		text-shadow: 0 0 24px #ff9800;
 	}
