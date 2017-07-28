@@ -45,7 +45,7 @@ skel.init({
 smoothScroll.init();
 
 $(document).ready( function() {
-	var Colours = [ "#2ecc71", "#e67e22", "#bdc3c7", "#f1c40f", "#95a5a6" ];
+	var Colours = [ "#e67e22", "#bdc3c7", "#f1c40f", "#95a5a6" ];
 	var Elements = $("table.animated th, table.animated td");
 
 	Elements.each( function() {
