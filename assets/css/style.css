@@ -630,6 +630,10 @@
 		margin: 0 auto;
 	}
 
+	.platinum-tier .logo {
+		max-height: 512px;
+	}
+
 	.centered {
 		text-align: center;
 	}
