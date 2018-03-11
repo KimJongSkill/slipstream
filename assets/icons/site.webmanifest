@@ -1,0 +1,19 @@
+{
+    "name": "Slipstream",
+    "short_name": "Slipstream",
+    "icons": [
+        {
+            "src": "/assets/icons/android-chrome-192x192.png?v=5Aez4QzX0g",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "/assets/icons/android-chrome-512x512.png?v=5Aez4QzX0g",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ],
+    "theme_color": "#afabab",
+    "background_color": "#afabab",
+    "display": "standalone"
+}
