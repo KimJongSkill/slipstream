@@ -6,12 +6,18 @@
 
 /* Basic */
 
+	:root {
+		--dark: #595959;
+		--light: #afabab;
+		--teal: #1ca7aa;
+	}
+
 	body {
-		background: #222833;
+		background-color: var(--dark);
 	}
 
 	body, input, select, textarea {
-		color: #555555;
+		color: var(--dark);
 		font-family: 'Raleway', sans-serif;
 		font-size: 13pt;
 		font-weight: 300;
@@ -19,7 +25,7 @@
 	}
 
 	a {
-		color: #3ac984;
+		color: var(--teal);
 		text-decoration: underline;
 	}
 
@@ -72,13 +78,13 @@
 	}
 
 	hr {
-		border-top: solid 1px #888888;
+		border-top: solid 1px var(--light);
 		border: 0;
 		margin-bottom: 1.5em;
 	}
 
 	blockquote {
-		border-left: solid 0.5em #888888;
+		border-left: solid 0.5em var(--light);
 		font-style: italic;
 		padding: 1em 0 1em 2em;
 	}
@@ -135,7 +141,7 @@
 		input[type="password"]:focus,
 		input[type="email"]:focus,
 		textarea:focus {
-			border-color: #3ac984;
+			border-color: var(--teal);
 		}
 
 	input[type="text"],
@@ -240,7 +246,7 @@
 				display: block;
 				padding: 0.60em 0;
 				border-top: 1px solid;
-				border-color: rgba(192, 192, 192, 0.15);
+				border-color: var(--light);
 			}
 
 			ul.default > :first-child {
@@ -291,7 +297,7 @@
 		ul.contact li {
 			padding: 1.05em 0;
 			border-top: 1px solid;
-			border-color: rgba(192, 192, 192, 0.15);
+			border-color: var(--light);
 		}
 
 			ul.contact li > span {
@@ -330,11 +336,10 @@
 
 		ul.style .fa {
 			float: left;
-			display: inline-block;
 			width: 80px;
 			height: 80px;
 			margin-right: 1em;
-			background: #c00000;
+			background: var(--teal);
 			line-height: 80px;
 			text-align: center;
 			border-radius: 10px;
@@ -350,7 +355,7 @@
 				display: block;
 				padding: 0.60em 0;
 				border-top: 1px solid;
-				border-color: red;
+				border-color: var(--teal);
 			}
 
 			ul.list > :first-child {
@@ -384,7 +389,7 @@
 
 			table.default thead {
 				background: #555555;
-				color: #fff;
+				color: white;
 			}
 
 /* Button */
@@ -397,7 +402,7 @@
 		-webkit-appearance: none;
 		appearance: none;
 		transition: background-color 0.2s ease-in-out;
-		background: #262626;
+		background: var(--dark);
 		border-radius: 40px;
 		border: 0;
 		color: white;
@@ -415,7 +420,7 @@
 		input[type="reset"]:hover,
 		input[type="button"]:hover,
 		.button:hover {
-			background-color: #c00000;
+			background-color: var(--teal);
 		}
 
 		input[type="submit"].fit,
@@ -435,7 +440,7 @@
 /* Wrapper */
 
 	.wrapper.style1 {
-		background: #fff;
+		background: white;
 	}
 
 	.wrapper.style2 {
@@ -466,9 +471,9 @@
 /* Header */
 
 	#header {
-		background: #333333 url("../images/background.jpg") no-repeat;
+		background: var(--dark) url("../images/background.jpg") no-repeat;
 		background-size: cover;
-		color: #fff;
+		color: white;
 		padding: 6em 0;
 		text-align: center;
 		background-position: center 80%;
@@ -512,7 +517,7 @@
 		}
 
 			#nav > ul > li a {
-				color: #FFF;
+				color: white;
 				text-decoration: none;
 				font-size: 1.2em;
 			}
@@ -522,11 +527,11 @@
 			}
 
 			#nav > ul > li:hover a {
-				color: #fff;
+				color: white;
 			}
 
 			#nav > ul > li.active {
-				background: #3ac984;
+				background: var(--teal);
 			}
 
 				#nav > ul > li.active a {
@@ -597,12 +602,12 @@
 
 	#footer {
 		padding: 4em 0;
-		color: #fff;
+		color: white;
 	}
 
 		#footer .major h2 {
 			font-size: 2em;
-			color: #FFF;
+			color: white;
 		}
 
 		#footer .major .byline {
@@ -613,7 +618,7 @@
 			margin-top: 3em;
 			padding-top: 3em;
 			border-top: 1px solid;
-			border-color: rgba(192, 192, 192, 0.15);
+			border-color: var(--light);
 			text-align: center;
 			color: inherit;
 		}
@@ -661,7 +666,7 @@
 	}
 
 	#nav a:hover {
-		text-shadow: 0 0 0.2em black;
+		text-shadow: 0 0 0.2em var(--teal);
 	}
 
 	div.animated {
@@ -677,7 +682,7 @@
 		bottom: 0;
 		left: 0;
 		right: 0;
-		background: linear-gradient(to bottom, rgba(192,0,0,0) 0%, rgba(192,0,0,0.6) 32%, rgba(192,0,0,1) 100%);
+		background: linear-gradient(to bottom, transparent 0%, rgba(28, 167, 170, 0.6) 32%, var(--teal) 100%);
 		overflow: hidden;
 		width: 100%;
 		height: 0;
@@ -689,5 +694,5 @@
 	}
 
 	i.animated:hover {
-		text-shadow: 0 0 24px #ff9800;
+		text-shadow: 0 0 24px var(--dark);
 	}
