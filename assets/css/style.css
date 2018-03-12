@@ -550,6 +550,7 @@
 
 		#banner .major h2 {
 			font-size: 3.5em;
+			color: var(--teal);
 		}
 
 		#banner .major .byline {
