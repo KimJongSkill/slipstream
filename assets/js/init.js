@@ -42,19 +42,18 @@ skel.init({
 
 smoothScroll.init();
 
-$(document).ready( function() {
-	var Colours = [ "#e67e22", "#bdc3c7", "#f1c40f", "#95a5a6" ];
-	var Elements = $("table.animated th, table.animated td");
+$(document).ready(() => {
+	const Colours = [ '#e67e22', '#bdc3c7', '#f1c40f', '#95a5a6', '#1ca7aa' ];
+	const Elements = $('table.animated th, table.animated td');
 
-	Elements.each( function() {
-		var n = $(this).index() + 1;
+	for (const Element of Elements) {
+		const n = $(Element).index() + 1;
 
-		$(this).hover( function() {
-			$("table.animated tr > td:nth-child(" + n + "):has(i)")
-				.css("background-color", Colours[n - 2]);
-		}, function() {
-			$("table.animated tr > td:nth-child(" + n + "):has(i)")
-				.css("background-color", "");
-		});
-	});
+		$(Element).hover(
+			() => $('table.animated tr > td:nth-child(' + n + '):has(i)')
+				.css('background-color', Colours[n - 2]),
+			() => $('table.animated tr > td:nth-child(' + n + '):has(i)')
+				.css('background-color', 'transparent')
+		);
+	};
 });
