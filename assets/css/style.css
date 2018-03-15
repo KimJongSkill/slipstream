@@ -531,14 +531,6 @@
 				text-shadow: 0 0 0.2em var(--teal);
 			}
 
-			#nav > ul > li.active {
-				background: var(--teal);
-			}
-
-				#nav > ul > li.active a {
-					color: white;
-				}
-
 			#nav > ul > li > ul {
 				display: none;
 			}
