@@ -44,16 +44,14 @@ smoothScroll.init();
 
 $(document).ready(() => {
 	const Colours = [ '#e67e22', '#bdc3c7', '#f1c40f', '#95a5a6', '#1ca7aa' ];
-	const Elements = $('table.animated th, table.animated td');
+	const Elements = document.querySelectorAll('table.animated th, table.animated td');
 
 	for (const Element of Elements) {
 		const n = $(Element).index() + 1;
 
-		$(Element).hover(
-			() => $('table.animated tr > td:nth-child(' + n + '):has(i)')
-				.css('background-color', Colours[n - 2]),
-			() => $('table.animated tr > td:nth-child(' + n + '):has(i)')
-				.css('background-color', 'transparent')
-		);
+		Element.addEventListener("mouseover", () =>
+			$('table.animated tr > td:nth-child(' + n + '):has(i)').css('background-color', Colours[n - 2]));
+		Element.addEventListener("mouseout", () => 
+			$('table.animated tr > td:nth-child(' + n + '):has(i)').css('background-color', 'transparent'));
 	};
 });
