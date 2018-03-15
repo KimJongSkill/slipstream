@@ -40,7 +40,9 @@ skel.init({
 	}
 });
 
-smoothScroll.init();
+const Scroll = new SmoothScroll('[data-scroll]',  {
+	offset: 100
+});
 
 $(document).ready(() => {
 	const Colours = [ '#e67e22', '#bdc3c7', '#f1c40f', '#95a5a6', '#1ca7aa' ];
