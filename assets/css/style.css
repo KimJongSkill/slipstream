@@ -518,7 +518,8 @@
 			#nav > ul > li a {
 				color: white;
 				text-decoration: none;
-				font-size: 1.2em;
+				font-size: 1.5em;
+				transition: all 0.2s ease-in-out;
 			}
 
 			#nav > ul > li:first-child {
@@ -526,7 +527,8 @@
 			}
 
 			#nav > ul > li:hover a {
-				color: white;
+				color: var(--teal);
+				text-shadow: 0 0 0.2em var(--teal);
 			}
 
 			#nav > ul > li.active {
@@ -659,14 +661,6 @@
 
 	.overflow-x {
 		overflow-x: auto;
-	}
-
-	#nav a {
-		transition: text-shadow 0.2s ease-in-out;
-	}
-
-	#nav a:hover {
-		text-shadow: 0 0 0.2em var(--teal);
 	}
 
 	div.animated {
