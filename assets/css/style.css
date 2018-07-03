@@ -625,13 +625,13 @@
 
 	.logo {
 		max-width: 100%;
-		max-height: 256px;
+		height: 256px;
 		display: block;
 		margin: 0 auto;
 	}
 
 	.platinum-tier .logo {
-		max-height: 512px;
+		height: 512px;
 	}
 
 	.centered {
